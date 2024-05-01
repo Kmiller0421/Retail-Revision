@@ -3,14 +3,13 @@ body {
     margin: 0;
     font-family: 'Heebo', sans-serif;
     display: flex;
-    
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.container {
-    width: 92%;
-    margin: auto;
-    height: 100%;
-    border: 2px solid red;
+.portal-login{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
 }
