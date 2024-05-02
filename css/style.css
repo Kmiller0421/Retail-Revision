@@ -7,7 +7,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg");
+    /*background-image: url("/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg");*/
+    background-image: url("/Users/mille/OneDrive/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
 }
@@ -126,4 +127,11 @@ form{
 
 input[type="submit"]:hover{
     background-color:#73C2FB;
+}
+
+@media only screen and (min-width: 400px){
+
+    #logo{
+        margin-bottom: auto;
+    }
 }
