@@ -1,3 +1,4 @@
+/*Global style for Login Portal and Forgot Portal*/
 
 body {
     margin: 0;
@@ -7,8 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /*background-image: url("/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg");*/
-    background-image: url("/Users/mille/OneDrive/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg");
+    background-image: url("/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
 }
@@ -18,95 +18,10 @@ body {
     right:5px;
 }
 
-.portal-login{
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-bottom: 15px;
-    background-color: white;
-    height:490px;
-}
-
 #logo{
     margin-left: 22%;
     margin-bottom: 5%;
     width: 220px;
-}
-
-.portal-login h3{
-    text-align: center;
-    position: relative;
-    top: 40px;
-}
-
-form{
-    text-align: center;
-}
-
-.user, .password, .login{
-    margin:10%;
-}
-
-#username, #password{
-    border: 2px solid black;
-    width: 200px;
-    padding: 5%;
-    border-radius: 15px;
-}
-
-.user svg, .password svg{
-   position:relative;
-   top: 5px;
-   left: 8px
-}
-
-#submit{
-    width: 200px;
-    height: 35px;
-    position: relative;
-    bottom: 7px;
-    border-radius: 15px;
-}
-
-.login svg{
-    position: relative;
-    bottom: 1px;
-    left: 2px;
-}
-
-#forgot-password{
-    position: relative;
-    bottom: 6px;
-}
-
-#help{
-    position: relative;
-    bottom: 2px;
-}
-
-#help svg{
-    position: relative;
-    left: 6px;
-    top: 5px;
-}
-
-.resources{
-    position: relative;
-    top: 70px;
-}
-
-.login{
-    position: relative;
-    top: 62px;
-}
-
-.password{
-    position: relative;
-    top: 50px;
-}
-
-.user{
-    position: relative;
-    top: 50px;
 }
 
 .resources a:link, a{
@@ -117,12 +32,6 @@ form{
 .resources a:hover{
     text-decoration: underline;
     color:blue;
-}
-
-.footer{
-    position: relative;
-    text-align: center;
-    top: 15px;
 }
 
 input[type="submit"]:hover{

@@ -1,1 +1,89 @@
+/* Portal Login Specific Content */
 
+.portal-login{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    background-color: white;
+    height:490px;
+    text-align: center;
+}
+
+.portal-login h3{
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.user, .password, .login{
+    margin:10%;
+}
+
+#username, #password{
+    border: 2px solid black;
+    width: 200px;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.user svg, .password svg{
+   position:relative;
+   top: 5px;
+   left: 8px
+}
+
+#submit{
+    width: 200px;
+    height: 35px;
+    position: relative;
+    bottom: 7px;
+    border-radius: 15px;
+}
+
+.login svg{
+    position: relative;
+    bottom: 1px;
+    left: 2px;
+}
+
+#forgot-password{
+    position: relative;
+    bottom: 6px;
+}
+
+#help{
+    position: relative;
+    top: 10px;
+}
+
+#help svg{
+    position: relative;
+    left: 6px;
+    top: 5px;
+}
+
+.resources{
+    position: relative;
+    top: 70px;
+}
+
+.login{
+    position: relative;
+    top: 62px;
+}
+
+.password{
+    position: relative;
+    top: 50px;
+}
+
+.user{
+    position: relative;
+    top: 50px;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    top: 15px;
+}

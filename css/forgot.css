@@ -1,0 +1,68 @@
+/* Forgot Username or Password Style */
+
+.portal-reset{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    background-color: white;
+    height:350px;
+    text-align: center;
+}
+
+.portal-reset h3{
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.radio-buttons {
+    position: relative;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 20px;
+}
+
+.radio-buttons p{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.reset-field{
+    position: relative;
+    top: 30px;
+    margin-top: 2%;
+}
+
+#reset{
+    border: 2px solid black;
+    width: 220px;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+#submit{
+    width: 200px;
+    height: 35px;
+    position: relative;
+    top: 55px;
+    border-radius: 15px;
+}
+
+#help{
+    position: relative;
+    top: 70px;
+}
+
+#help svg{
+    position: relative;
+    left: 6px;
+    top: 5px;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    top: 15px;
+}
+
