@@ -6,7 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Retail Merchandising Services</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/forgot.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function () {
+        // Function to handle radio button click
+        $("input[type=radio]").click(function () {
+            // Get the value of the selected radio button
+            var selectedOption = $(this).val();
+            // Find the input field and update its placeholder based on the selected option
+            $("input[type=text]").attr("placeholder", selectedOption === "employee" ? "Employee/IC #" : "Email");
+            // Clear the input field value
+            $("input[type=text]").val("");
+        });
+
+        // Function to handle input box focus
+        $("input[type=text]").focus(function () {
+            // Get the value of the currently selected radio button
+            var selectedOption = $("input[type=radio]:checked").val();
+            // Change the radio button selection based on the input box focus
+            $("input[type=radio][value=" + (selectedOption === "employee" ? "email" : "employee") + "]").prop("checked", true);
+            // Update the input box placeholder based on the radio button selection
+            $(this).attr("placeholder", selectedOption === "employee" ? "Employee/IC #" : "Email");
+        });
+
+        //init
+        $("input[type=radio]:checked").click();
+      });
+    </script>
   </head>
   <body>
 
@@ -18,6 +44,8 @@
           <h3>Forgot Username or Password</h2>
 
           <div class="radio-buttons">
+               <p id="help-description">To recover your username and password, please enter Your Employee/IC # or username into the textbox.
+                You can also select the select the 'Email Address' option to enter an email address.</p>
                <p>Search By:</p>
                <input type="radio" id="employee-username" name="options" value="employee">
                <label for="employee-username">Employee/IC # or User Name</label><br>
@@ -27,21 +55,22 @@
           </div>
 
           <div class="reset-field">
-            <input type="text" id="reset" name="reset" placeholder="Email">
+            <input type="text" id="reset-email" name="reset" placeholder="">
           </div>
           
           <div class="send">
-            <input type="submit" id="submit" name="submit" value="Submit">
+            <input type="submit" id="reset-submit" name="submit" value="Submit">
           </div>
           
-          <div class="resources">
-            <a href="" id="help">Help<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></a>
+          <div class="reset-resources">
+            <a href="./portal.html" id="back-to-login">Back to Login</a><br>
+            <a href="mailto:support@rmservicing.com" id="reset-help">Need Assistance? Email support@rmservicing.com</a>
           </div>
           
         </form>
       </div>
  
-      <div class="footer">
+      <div class="reset-footer">
         <p><b>Copyright &copy; 2006 - 2024 Retail Merchandising Services<br>
         Service Release 23.0.39</b></p>
       </div>
