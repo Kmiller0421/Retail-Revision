@@ -1,4 +1,4 @@
-
+/*Global style for MyHome*/
 body{
     margin: 0;
     min-height: 100vh;
@@ -10,6 +10,7 @@ body{
     background-size: cover;
 }
 
+/* Position MyHome content in their relative spots */
 nav{
     height: 45px;
     border: 2px solid black;
@@ -27,21 +28,8 @@ ul {
   li {
     float: left;
 }
-  
-  li a {
-    display: block;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-}
 
-  li a:hover{
-    background-color:#73C2FB;
-    border: 1px solid black;
-}
-
-/* For nav-bar svg logos */
-#logo-svg{
+#logo-svg{                      /* For nav-bar svg logos */
     position: relative;
     top: 3px;
     left: 2px;
@@ -71,15 +59,6 @@ table{
 td{
     padding: 14px 16px;
     border: 2px solid black;
-}
-
-td a{
-    text-decoration: none;
-    color: black;
-}
-
-td:hover{
-    background-color:#73C2FB;
 }
 
 .login-info{
@@ -144,6 +123,28 @@ td:hover{
     position: relative;
     top: 7px;
     right: 3px;
+}
+
+/* MyHome Style */
+li a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:#73C2FB;
+    border: 1px solid black;
+}
+
+td a{
+    text-decoration: none;
+    color: black;
+}
+
+td:hover{
+    background-color:#73C2FB;
 }
 
 .actions a{

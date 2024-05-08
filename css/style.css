@@ -1,5 +1,4 @@
 /*Global style for Login Portal and Forgot Portal*/
-
 body {
     margin: 0;
     font-family: sans-serif;
@@ -13,15 +12,30 @@ body {
     background-size: cover;
 }
 
-.container{
-    position: relative;
-    right:5px;
+/* Portal Login Style */
+.portal-login{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    background-color: white;
+    height:490px;
+    text-align: center;
+    min-width: 400px;
 }
 
-#logo{
-    margin-left: 22%;
-    margin-bottom: 5%;
-    width: 220px;
+#username, #password{
+    border: 2px solid black;
+    width: 200px;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+#submit{
+    width: 200px;
+    height: 35px;
+    position: relative;
+    bottom: 7px;
+    border-radius: 15px;
 }
 
 .resources a:link, a{
@@ -38,79 +52,43 @@ input[type="submit"]:hover{
     background-color:#73C2FB;
 }
 
-@media only screen and (min-width: 400px){
-
-    #logo{
-        margin-bottom: auto;
-    }
-}
-
-/* Portal Login Specific Content */
-.portal-login{
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-bottom: 15px;
-    background-color: white;
-    height:490px;
-    text-align: center;
-    min-width: 400px;
-}
-
+/* Position portal login content in their relative spots */
 .portal-login h3{
     text-align: center;
     position: relative;
     top: 40px;
 }
 
+.container{                         /* Positioned portal login to the right because it didn't seem centered on screen */
+    position: relative;
+    right:5px;
+}
+
+#logo{
+    margin-left: 22%;
+    margin-bottom: 5%;
+    width: 220px;
+}
+
 .user, .password, .login{
     margin:10%;
 }
 
-#username, #password{
-    border: 2px solid black;
-    width: 200px;
-    padding: 5%;
-    border-radius: 15px;
+.user svg, .password svg{  /* Svg logos for username and password */
+    position:relative;
+    top: 5px;
+    left: 8px
+}
+ 
+.login svg{                /* Svg logo for login */
+     position: relative;
+     bottom: 1px;
+     left: 2px;
 }
 
-.user svg, .password svg{
-   position:relative;
-   top: 5px;
-   left: 8px
-}
-
-#submit{
-    width: 200px;
-    height: 35px;
+.user{
     position: relative;
-    bottom: 7px;
-    border-radius: 15px;
-}
-
-.login svg{
-    position: relative;
-    bottom: 1px;
-    left: 2px;
-}
-
-#forgot-password{
-    position: relative;
-    bottom: 6px;
-}
-
-#help{
-    position: relative;
-    top: 10px;
-}
-
-.resources{
-    position: relative;
-    top: 70px;
-}
-
-.login{
-    position: relative;
-    top: 62px;
+    top: 50px;
 }
 
 .password{
@@ -118,9 +96,24 @@ input[type="submit"]:hover{
     top: 50px;
 }
 
-.user{
+.login{
     position: relative;
-    top: 50px;
+    top: 62px;
+}
+
+#forgot-password{
+    position: relative;
+    bottom: 6px;
+}
+
+.resources{
+    position: relative;
+    top: 70px;
+}
+
+#help{
+    position: relative;
+    top: 10px;
 }
 
 .footer{
@@ -139,12 +132,6 @@ input[type="submit"]:hover{
     text-align: center;
 }
 
-.portal-reset h3{
-    text-align: center;
-    position: relative;
-    top: 15px;
-}
-
 #help-description{
     position: relative;
     width:350px;
@@ -155,6 +142,36 @@ input[type="submit"]:hover{
     border-radius: 10px;
     background-color: #f6f6f6;
     padding: 15px;
+}
+
+#reset-email{
+    border: 2px solid black;
+    width: 220px;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+#reset-submit{
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.reset-resources a:link, a{
+    text-decoration: none;
+    color:black;
+}
+
+.reset-resources a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+
+/* Position portal forgot content in their relative spots */
+.portal-reset h3{
+    text-align: center;
+    position: relative;
+    top: 15px;
 }
 
 .radio-buttons {
@@ -176,19 +193,9 @@ input[type="submit"]:hover{
     margin-top: 2%;
 }
 
-#reset-email{
-    border: 2px solid black;
-    width: 220px;
-    padding: 5%;
-    border-radius: 15px;
-}
-
 #reset-submit{
-    width: 200px;
-    height: 35px;
     position: relative;
     top: 40px;
-    border-radius: 15px;
 }
 
 .reset-resources{
@@ -207,12 +214,10 @@ input[type="submit"]:hover{
     top: 15px;
 }
 
-.reset-resources a:link, a{
-    text-decoration: none;
-    color:black;
-}
+/* Media Query */
+@media only screen and (min-width: 400px){
 
-.reset-resources a:hover{
-    text-decoration: underline;
-    color:blue;
+    #logo{
+        margin-bottom: auto;
+    }
 }
