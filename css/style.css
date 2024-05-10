@@ -22,7 +22,7 @@ body{
     height: 500px;
 }
 
-form{
+#login-form{
     text-align: center;
     position: relative;
     top: 10%;
@@ -73,4 +73,33 @@ form{
 
 input[type="submit"]:hover{
     background-color: #73C2FB;
+}
+
+/* Forgot Portal */
+.portal-forgot{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 500px;
+}
+
+#forgot-form{
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+.email, .submit, .forgot-resources{
+    margin: 45px;
+}
+
+#email{
+    border: 2px solid black;
+    width: 200px;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.radio-buttons{
+    display: block;
 }
