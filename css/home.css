@@ -1,14 +1,14 @@
 
 body{
     margin: 0;
-    height: 100vh;
+    font-family: sans-serif;
     background-image: url(/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
 }
 
-.grid{
+.grid{                                      /* For header nav, sub nav, section-1 through section-3 */
    display:grid;
    grid-template-columns: reapeat(12, 1fr);
    gap: 10px;
@@ -17,6 +17,7 @@ body{
 header{
     padding: 10px 20px;
     background-color: #d9d9d9;
+    border-bottom: 2px solid #000;
     align-items: center;
 }
 
@@ -29,20 +30,30 @@ header #logout{
     justify-self: end;
 }
 
-#section-1{
+#section-1, #section-2, #section-3{
     background-color: #d9d9d9;
     max-width: 900px;
-    padding: 20px 15px;
+    padding: 20px 40px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    border: 2px solid black;
+}
+
+#section-2 a{
+    margin-left: 22%;
+    font-size: larger;
+}
+
+.footer{
+    text-align: center;
 }
 
 /* Style nav */
 nav a{
     font-size: 20px;
-    font-family: sans-serif;
+    
 }
 
 #nav-options{
@@ -77,4 +88,30 @@ nav a:hover,
 
 #section-1 a{
     margin-left: 30px;
+}
+
+#section-2 svg{
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+
+#important-info{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#alerts:link,
+#alerts:visited{
+    text-decoration: none;
+    color:#000;
+}
+
+#alerts:hover{
+    text-decoration: underline;
+    color: #73C2FB;
+}
+
+hr{
+    width: 100%;
 }
