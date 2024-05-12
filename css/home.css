@@ -1,0 +1,80 @@
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid{
+   display:grid;
+   grid-template-columns: reapeat(12, 1fr);
+   gap: 10px;
+}
+
+header{
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    align-items: center;
+}
+
+header nav{
+    grid-column: 1;
+}
+
+header #logout{
+    grid-column: 2 / span 1;
+    justify-self: end;
+}
+
+#section-1{
+    background-color: #d9d9d9;
+    max-width: 900px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Style nav */
+nav a{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#nav-options{
+    margin-left: 20px;
+}
+
+nav a:link,
+nav a:visited,
+#logout a:link,
+#logout a:visited{
+    text-decoration: none;
+    color:black
+}
+
+nav a:hover,
+#logout a:hover{
+    color: #73C2FB;
+}
+
+#nav-options{
+    position: relative;
+    bottom: 36px;
+}
+
+#logout{
+    font-family: sans-serif;
+}
+
+#section-1 nav{
+    margin-left: 15px;
+}
+
+#section-1 a{
+    margin-left: 30px;
+}

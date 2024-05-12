@@ -1,3 +1,7 @@
+
+/************************************************ 
+* Universal styling for login and forgot portal 
+*************************************************/
 body{
     display:flex;
     justify-content: center;
@@ -8,28 +12,59 @@ body{
     background-image: url(/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #logo{
-    margin-left: 24%;
-    width: 220px;
+    margin-left: 28%;
+    margin-right: 28%;
 }
 
-.portal-login{
+.portal-login, .portal-forgot{           /* Create shape of portal login and portal-forgot where content will be placed */
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 10px;
     height: 500px;
 }
 
-#login-form{
+#login-form, #forgot-form{            /* Position all content in forms to certain position */
     text-align: center;
     position: relative;
     top: 10%;
 }
 
+.resources, .forgot-resources{
+    font-weight: bold;
+}
+
+.resources a:link,
+.resources a:visited,
+.forgot-resources a:link,
+.forgot-resources a:visited {            /* Give resource links a default color of black */
+    text-decoration: none;
+    color: #000000;
+}
+
+.resources a:hover,
+.forgot-resources a:hover{                  /* Changes <a> color and underlines the <a> when the user hovers over link */
+    text-decoration: underline;
+    color:#0000ff;
+}
+
+input[type="submit"]:hover{          /* Gives the input type "submit" a color when user hovers over button */
+    background-color: #73C2FB;
+}
+
+.footer{
+    text-align: center;
+}
+
+/************************************************ 
+* Specific styling for Portal login
+*************************************************/
 .user, .password, .login, .resources{
-    margin: 45px;
+    margin-bottom: 45px;
+    margin-top: 45px;
 }
 
 #username, #password{
@@ -46,51 +81,18 @@ body{
     border-radius: 5px;
 }
 
-.footer{
-    text-align: center;
-}
-
-.resources{
-    font-weight: bold;
-}
-
 .user svg, .password svg, .login svg{  /* Svg logos for username and password */
     position:relative;
     top: 5px;
     left: 8px
 }
 
-.resources a:link,
-.resources a:visited {
-    text-decoration: none;
-    color: #000000; /* Black color */
-}
-
-.resources a:hover{
-    text-decoration: underline;
-    color:#0000ff;
-}
-
-input[type="submit"]:hover{
-    background-color: #73C2FB;
-}
-
-/* Forgot Portal */
-.portal-forgot{
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    height: 500px;
-}
-
-#forgot-form{
-    text-align: center;
-    position: relative;
-    top: 10%;
-}
-
-.email, .submit, .forgot-resources{
-    margin: 45px;
+/************************************************ 
+* Specific styling for Forgot Portal
+*************************************************/
+ .submit, .forgot-resources{
+    margin-bottom: 45px;
+    margin-top: 50px;
 }
 
 #email{
@@ -98,8 +100,15 @@ input[type="submit"]:hover{
     width: 200px;
     padding: 5%;
     border-radius: 15px;
+    margin-top: 30px;
 }
 
-.radio-buttons{
-    display: block;
+.section-1{                         /* Reposition radio buttons, email textbox and submit button in form */
+    margin-top: 40px;
+}
+
+.radio-buttons {                   /* Algin radio-buttons in the middle of form (So input buttons align together) */
+   text-align: left;
+   margin-left: 20%;
+   margin-right: 20%;
 }
