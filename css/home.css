@@ -8,13 +8,14 @@ body{
     background-position: center;
 }
 
+/* Layout of homepage */
 .grid{                                      /* For header nav, sub nav, section-1 through section-3 */
    display:grid;
    grid-template-columns: reapeat(12, 1fr);
    gap: 10px;
 }
 
-header{
+header{                                    /* Header box */
     padding: 10px 20px;
     background-color: #d9d9d9;
     border-bottom: 2px solid #000;
@@ -30,7 +31,7 @@ header #logout{
     justify-self: end;
 }
 
-#section-1, #section-2, #section-3{
+#section-1, #section-2, #section-3{     /* section-1 through section-3 boxes */
     background-color: #d9d9d9;
     max-width: 900px;
     padding: 20px 40px;
@@ -50,68 +51,55 @@ header #logout{
     text-align: center;
 }
 
-/* Style nav */
-nav a{
+/* Styling Section */
+#main-nav, #sub-nav{              /* Font size for main navbar and sub navbar */
     font-size: 20px;
-    
 }
 
-#nav-options{
+#nav-options{                     /* Main-nav */
     margin-left: 20px;
 }
 
-nav a:link,
+nav a:link,                      /* Link Styling */
 nav a:visited,
 #logout a:link,
-#logout a:visited{
+#logout a:visited,
+#alerts:link,
+#alerts:visited{
     text-decoration: none;
     color:black
 }
 
-nav a:hover,
-#logout a:hover{
+nav a:hover,                    /* Link hover action styling */
+#logout a:hover,
+#alerts:hover{
     color: #73C2FB;
 }
 
-#nav-options{
+#nav-options{                   /* Position nav-options in the center relative to its position */
     position: relative;
     bottom: 36px;
 }
 
-#logout{
-    font-family: sans-serif;
-}
-
-#section-1 nav{
+#section-1 nav{                 /* Position nav-options in the center of page using margins */
     margin-left: 15px;
 }
 
-#section-1 a{
+#section-1 a{                  /* Space out the nav-options by using margin-left */
     margin-left: 30px;
 }
 
-#section-2 svg{
+#section-2 svg{                /* Align icons(svg) with links */
     position: relative;
     right: 10px;
     top: 5px;
 }
 
-#important-info{
+#important-info{               /* Have text line up together and adjust line-height for readability */
     text-align: justify;
     line-height: 1.6;
 }
 
-#alerts:link,
-#alerts:visited{
-    text-decoration: none;
-    color:#000;
-}
-
-#alerts:hover{
-    text-decoration: underline;
-    color: #73C2FB;
-}
-
 hr{
-    width: 100%;
+    width: 100%;               /* Horizontal line was small so create width:100%; to create an actual line */
 }
