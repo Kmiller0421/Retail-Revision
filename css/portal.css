@@ -1,11 +1,7 @@
-
-/************************************************ 
-* Universal styling for login and forgot portal 
-*************************************************/
 body{
     display:flex;
     justify-content: center;
-    align-items: center;      /*Aligns all content in the body on the center of webpage */
+    align-items: center;      
     min-height: 100vh;
     font-family: sans-serif;
     font-size: 15px;
@@ -15,19 +11,23 @@ body{
     background-position: center;
 }
 
+/************************************************ 
+* Universal Styling
+*************************************************/
+
 #logo{
     margin-left: 28%;
     margin-right: 28%;
 }
 
-.portal-login, .portal-forgot{           /* Create shape of portal login and portal-forgot where content will be placed */
+.portal-login, .portal-forgot{           
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 10px;
     height: 500px;
 }
 
-#login-form, #forgot-form{            /* Position all content in forms to certain position */
+#login-form, #forgot-form{           
     text-align: center;
     position: relative;
     top: 10%;
@@ -40,18 +40,17 @@ body{
 .resources a:link,
 .resources a:visited,
 .forgot-resources a:link,
-.forgot-resources a:visited {            /* Give resource links a default color of black */
+.forgot-resources a:visited {            
     text-decoration: none;
     color: #000000;
 }
 
 .resources a:hover,
-.forgot-resources a:hover{                  /* Changes <a> color and underlines the <a> when the user hovers over link */
-    text-decoration: underline;
+.forgot-resources a:hover{                  
     color:#0000ff;
 }
 
-input[type="submit"]:hover{          /* Gives the input type "submit" a color when user hovers over button */
+input[type="submit"]:hover{          
     background-color: #73C2FB;
 }
 
@@ -62,6 +61,7 @@ input[type="submit"]:hover{          /* Gives the input type "submit" a color wh
 /************************************************ 
 * Specific styling for Portal login
 *************************************************/
+
 .user, .password, .login, .resources{
     margin-bottom: 45px;
     margin-top: 45px;
@@ -81,7 +81,7 @@ input[type="submit"]:hover{          /* Gives the input type "submit" a color wh
     border-radius: 5px;
 }
 
-.user svg, .password svg, .login svg{  /* Svg logos for username and password */
+.user svg, .password svg, .login svg{  
     position:relative;
     top: 5px;
     left: 8px
@@ -90,6 +90,7 @@ input[type="submit"]:hover{          /* Gives the input type "submit" a color wh
 /************************************************ 
 * Specific styling for Forgot Portal
 *************************************************/
+
  .submit, .forgot-resources{
     margin-bottom: 45px;
     margin-top: 50px;
@@ -103,11 +104,11 @@ input[type="submit"]:hover{          /* Gives the input type "submit" a color wh
     margin-top: 30px;
 }
 
-.section-1{                         /* Reposition radio buttons, email textbox and submit button in form */
+.section-1{                         
     margin-top: 40px;
 }
 
-.radio-buttons {                   /* Algin radio-buttons in the middle of form (So input buttons align together) */
+.radio-buttons {                  
    text-align: left;
    margin-left: 20%;
    margin-right: 20%;

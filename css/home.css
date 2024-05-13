@@ -1,4 +1,3 @@
-
 body{
     margin: 0;
     font-family: sans-serif;
@@ -8,14 +7,15 @@ body{
     background-position: center;
 }
 
-/* Layout of homepage */
-.grid{                                      /* For header nav, sub nav, section-1 through section-3 */
+.grid{                                      
    display:grid;
    grid-template-columns: reapeat(12, 1fr);
    gap: 10px;
 }
 
-header{                                    /* Header box */
+/* Header section Main navbar */
+
+header{                                    
     padding: 10px 20px;
     background-color: #d9d9d9;
     border-bottom: 2px solid #000;
@@ -29,11 +29,14 @@ header nav{
 header #logout{
     grid-column: 2 / span 1;
     justify-self: end;
+    white-space: nowrap;
 }
 
-#section-1, #section-2, #section-3{     /* section-1 through section-3 boxes */
+/* Section-1 through Section-3 boxes */
+
+#section-1, #section-2, #section-3{     
     background-color: #d9d9d9;
-    max-width: 900px;
+    width: 900px;
     padding: 20px 40px;
     border-radius: 5px;
     margin-left: auto;
@@ -42,64 +45,78 @@ header #logout{
     border: 2px solid black;
 }
 
+/* Main Navbar */
+
+#nav-options{                     
+    margin-left: 20px;
+    position: relative;
+    bottom: 36px;
+}
+
+#main-nav, #sub-nav{            
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* Second Navbar */
+
+#section-1 a{                  
+    margin-left: 30px;
+}
+
+#section-1 nav{                 
+    margin-left: 15px;
+}
+
+/* Alerts */
+
 #section-2 a{
     margin-left: 22%;
     font-size: larger;
 }
 
+/* Alert Svg Icons */
+
+#section-2 svg{                
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
+
+/* Horizontal line */
+
+hr{
+    width: 100%;               
+}
+
+/* Important Information Text */
+
+#important-info{               
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Footer */
+
 .footer{
     text-align: center;
 }
 
-/* Styling Section */
-#main-nav, #sub-nav{              /* Font size for main navbar and sub navbar */
-    font-size: 20px;
-}
+/* Styling for the Main navbar, Sub navbar, Logout link, and Alert link */
 
-#nav-options{                     /* Main-nav */
-    margin-left: 20px;
-}
-
-nav a:link,                      /* Link Styling */
+nav a:link,                      
 nav a:visited,
 #logout a:link,
 #logout a:visited,
 #alerts:link,
 #alerts:visited{
     text-decoration: none;
-    color:black
+    color:#000;
 }
 
-nav a:hover,                    /* Link hover action styling */
+nav a:hover,                    
 #logout a:hover,
 #alerts:hover{
-    color: #73C2FB;
-}
-
-#nav-options{                   /* Position nav-options in the center relative to its position */
-    position: relative;
-    bottom: 36px;
-}
-
-#section-1 nav{                 /* Position nav-options in the center of page using margins */
-    margin-left: 15px;
-}
-
-#section-1 a{                  /* Space out the nav-options by using margin-left */
-    margin-left: 30px;
-}
-
-#section-2 svg{                /* Align icons(svg) with links */
-    position: relative;
-    right: 10px;
-    top: 5px;
-}
-
-#important-info{               /* Have text line up together and adjust line-height for readability */
-    text-align: justify;
-    line-height: 1.6;
-}
-
-hr{
-    width: 100%;               /* Horizontal line was small so create width:100%; to create an actual line */
+    color: #0000ff;
+    text-decoration: underline;
 }
