@@ -1,3 +1,19 @@
+:root{
+    --card-color: #fff;
+    --card-border-color: #000;
+    --link-color: #000;
+    --link-color-2: #0000ff;
+    --submit-color: #73C2FB;
+    --input-field-border-color: #000;
+    --submit-border-color: #000;
+}
+
+*{
+    outline: 2px solid red;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     display:flex;
     justify-content: center;
@@ -5,7 +21,7 @@ body{
     min-height: 100vh;
     font-family: sans-serif;
     font-size: 15px;
-    background-image: url(/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
+    background-image: url(/Users/mille/OneDrive/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
@@ -15,16 +31,21 @@ body{
 * Universal Styling
 *************************************************/
 
+.wrapper-container{
+    width: 80px;
+}
+
 #logo{
     margin-left: 28%;
     margin-right: 28%;
 }
 
 .portal-login, .portal-forgot{           
-    background-color: #ffffff;
-    border: 2px solid #000000;
+    background-color: var(--card-color);
+    border: 2px solid var(--card-border-color);
     border-radius: 10px;
     height: 500px;
+    width: 90%;
 }
 
 #login-form, #forgot-form{           
@@ -42,16 +63,16 @@ body{
 .forgot-resources a:link,
 .forgot-resources a:visited {            
     text-decoration: none;
-    color: #000000;
+    color: var(--link-color);
 }
 
 .resources a:hover,
 .forgot-resources a:hover{                  
-    color:#0000ff;
+    color: var(--link-color-2);
 }
 
 input[type="submit"]:hover{          
-    background-color: #73C2FB;
+    background-color: var(--submit-color);
 }
 
 .footer{
@@ -68,7 +89,7 @@ input[type="submit"]:hover{
 }
 
 #username, #password{
-    border: 2px solid black;
+    border: 2px solid var(--input-field-border-color);
     width: 200px;
     padding: 5%;
     border-radius: 15px;
@@ -77,7 +98,7 @@ input[type="submit"]:hover{
 #submit{
     width: 200px;
     height: 35px;
-    border: 2px solid #000000;
+    border: 2px solid var(--submit-border-color);
     border-radius: 5px;
 }
 
@@ -97,7 +118,7 @@ input[type="submit"]:hover{
 }
 
 #email{
-    border: 2px solid black;
+    border: 2px solid var(--input-field-border-color);
     width: 200px;
     padding: 5%;
     border-radius: 15px;
