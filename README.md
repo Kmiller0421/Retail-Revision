@@ -15,4 +15,5 @@ the employee portal but with a modernized look.
 Coming Soon!!!
 
 # Demo Screenshots - :camera:
-Coming Soon!!!
+![Screenshot 2024-05-27 182033](https://github.com/Kmiller0421/Retail-Revision/assets/88473372/a5e05fb4-bdcf-4552-8c17-cab60392cd31)
+![Screenshot 2024-05-27 182103](https://github.com/Kmiller0421/Retail-Revision/assets/88473372/08287774-8a27-4c89-81aa-6a3f554f05bf)
