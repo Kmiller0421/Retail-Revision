@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --card-color: #fff;
     --card-border-color: #000;
@@ -10,125 +9,161 @@
     --submit-border-color: #000;
 }
 
-*{
-    /*outline: 2px solid red;*/
+* {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    /*outline: 2px solid red;*/
 }
 
 body{
-    display:flex;
-    justify-content: center;
-    align-items: center;      
-    min-height: 100vh;
-    font-family:"Open Sans", sans-serif;
-    font-size: 15px;
-    background-image: url(/Users/mille/OneDrive/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    background-position: center;
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   min-height: 100vh;          /* Moves content downwards */
+   background-image: url(/Users/mille/Documents/GitHub/Retail-Revision/img/rms-about-2.jpg);
+   background-repeat: no-repeat, repeat;
+   background-size: cover;
+   background-position: center;
 }
 
-/************************************************ 
-* Universal Styling
-*************************************************/
-
-#logo{
-    margin-left: 28%;
-    margin-right: 28%;
+.wrapper-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
 }
 
-.portal-login, .portal-forgot{           
-    background-color: var(--card-color);
+/* Portal */
+.portal-login{
     border: 2px solid var(--card-border-color);
+    background-color: var(--card-color);
     border-radius: 10px;
-    height: 500px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px;
+    height: 480px;
 }
 
-#login-form, #forgot-form{           
-    text-align: center;
-    position: relative;
-    top: 10%;
+/* Portal header */
+.portal-title{
+    margin: 40px 0px 0px 0px;
+    font-size: 20px;
 }
 
-.resources, .forgot-resources{
-    font-weight: bold;
-}
-
-.resources a:link,
-.resources a:visited,
-.forgot-resources a:link,
-.forgot-resources a:visited {            
-    text-decoration: none;
-    color: var(--link-color);
-}
-
-.resources a:hover,
-.forgot-resources a:hover{                  
-    color: var(--link-color-2);
-}
-
-input[type="submit"]:hover{          
-    background-color: var(--submit-color);
-}
-
-.footer{
-    text-align: center;
-    margin-top: 5%;
-}
-
-/************************************************ 
-* Specific styling for Portal login
-*************************************************/
-
-.user, .password, .login, .resources{
-    margin-bottom: 45px;
-    margin-top: 45px;
+/* Username and Password */
+.username, .password{
+   margin: 40px 0px; 
 }
 
 #username, #password{
+    border-radius: 30px;
     border: 2px solid var(--input-field-border-color);
-    width: 200px;
-    padding: 5%;
-    border-radius: 15px;
+    padding: 15px;
+    width: 200px; 
 }
 
+/* Username and Password placeholder */
+input::placeholder{
+    color: #000;
+}
+
+/* Login */
+.login{
+    margin: 0px 0px 30px 0px;
+}
+
+/* Login Button */
 #submit{
-    width: 200px;
-    height: 35px;
+    border-radius: 30px;
     border: 2px solid var(--submit-border-color);
-    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
 }
 
-.user svg, .password svg, .login svg{  
+#submit:hover{
+    background-color:var(--submit-color)
+}
+
+/* SVG icons */
+.username svg, .password svg, .login svg{  
     position:relative;
     top: 5px;
     left: 8px
 }
 
+/* Resources */
+.resources{
+    margin: 0px 0px 30px 0px;
+    font-size: 14px;
+}
+
+/* Forgot password and Help links */
+#forgot-password, #help{
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+#forgot-password:hover,
+#help:hover{
+    text-decoration: underline;
+    color: var(--link-color-2)
+}
+
+
 /************************************************ 
 * Specific styling for Forgot Portal
 *************************************************/
 
- .submit, .forgot-resources{
-    margin-bottom: 45px;
-    margin-top: 50px;
+/* Forgot portal */
+.portal-forgot{
+    border: 2px solid var(--card-border-color);
+    background-color: var(--card-color);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 0px;
+    height: 480px;
 }
 
+/* Forgot header */
+.forgot-title{
+    margin: 40px 0px 0px 0px;
+    font-size: 20px;
+}
+
+/* Section 1 with radio buttons and email input box */
+.section-1{
+    margin: 28px 0px; 
+}
+
+/* Radio buttons */
+.radio-buttons, .email{
+    margin: 0px 0px 40px 0px;
+}
+
+/* Email input box */
 #email{
     border: 2px solid var(--input-field-border-color);
     width: 200px;
-    padding: 5%;
+    padding: 10px;
     border-radius: 15px;
-    margin-top: 30px;
 }
 
-.section-1{                         
-    margin-top: 40px;
+/* Back to login and forgot help links */
+#back-to-login, #forgot-help{
+    text-decoration: none;
+    color: var(--link-color);
 }
 
-.radio-buttons {                  
-   text-align: left;
-   margin-left: 20%;
-   margin-right: 20%;
+#back-to-login:hover,
+#forgot-help:hover{
+    text-decoration: underline;
+    color: var(--link-color-2)
+}
+
+/* Forgot Resources */
+.forgot-resources{
+    margin: 0px 0px 30px 0px;
+    font-size: 14px;
 }
